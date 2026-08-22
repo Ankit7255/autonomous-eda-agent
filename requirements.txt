@@ -1,0 +1,9 @@
+langgraph
+pandas
+numpy
+matplotlib
+seaborn
+google-genai
+streamlit
+python-dotenv
+tabulate

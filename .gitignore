@@ -1,0 +1,11 @@
+# Environments
+.env
+__pycache__/
+
+# Python virtual environments (if you create one later)
+venv/
+env/
+
+# Artifacts and Data
+artifacts/
+data/
