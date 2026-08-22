@@ -44,17 +44,6 @@ The system operates as a stateful cyclical graph (`StateGraph`), coordinating be
 +-----------------------+
 
 
-Core Design Principles
-State Isolation: The workflow state tracks dataset metadata, execution tracebacks, runtime iteration counts, and generated visual artifacts.
-
-Self-Healing Loop: Runtime errors (e.g., KeyError, ZeroDivisionError, ValueError) are intercepted and formatted into diagnostic prompts for the Coder node, allowing automatic code refactoring up to a configured threshold.
-
-Dynamic Visualization Guardrails: Enforces cardinality checks during the planning and coding stages to prevent plotting unreadable high-cardinality categorical data.
-
-Executive Synthesis: Converts raw execution metrics and outputs into structured markdown reporting with domain-specific recommendations.
-
-
-
 
 
 autonomous EDA agent/
@@ -74,6 +63,19 @@ autonomous EDA agent/
 
 
 ```
+
+
+## Core Design Principles
+
+
+1. State Isolation: The workflow state tracks dataset metadata, execution tracebacks, runtime iteration counts, and generated visual artifacts.
+
+2. Self-Healing Loop: Runtime errors (e.g., KeyError, ZeroDivisionError, ValueError) are intercepted and formatted into diagnostic prompts for the Coder node, allowing automatic code refactoring up to a configured threshold.
+
+3. Dynamic Visualization Guardrails: Enforces cardinality checks during the planning and coding stages to prevent plotting unreadable high-cardinality categorical data.
+
+4. Executive Synthesis: Converts raw execution metrics and outputs into structured markdown reporting with domain-specific recommendations.
+
 
 ## Technical Stack
 
