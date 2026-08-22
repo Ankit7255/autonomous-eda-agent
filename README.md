@@ -54,45 +54,20 @@ Dynamic Visualization Guardrails: Enforces cardinality checks during the plannin
 Executive Synthesis: Converts raw execution metrics and outputs into structured markdown reporting with domain-specific recommendations.
 
 
-<table>
-  <thead>
-    <tr>
-      <th>Layer</th>
-      <th>Component</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Orchestration</b></td>
-      <td>LangGraph</td>
-      <td>State machine managing cyclical execution and self-healing loops</td>
-    </tr>
-    <tr>
-      <td><b>LLM Engine</b></td>
-      <td>Google Gemini API</td>
-      <td>Structured reasoning, code generation, and executive reporting</td>
-    </tr>
-    <tr>
-      <td><b>Execution Runtime</b></td>
-      <td>Python 3.11+ / Sandbox</td>
-      <td>Local execution environment with captured I/O streams</td>
-    </tr>
-    <tr>
-      <td><b>Data & Viz</b></td>
-      <td>Pandas, NumPy, Seaborn, Matplotlib</td>
-      <td>Tabular data manipulation and statistical visualization</td>
-    </tr>
-    <tr>
-      <td><b>Interface</b></td>
-      <td>Streamlit</td>
-      <td>Web interface for file ingestion, log streaming, and rendering</td>
-    </tr>
-  </tbody>
-</table>
+## Technical Stack
 
 
-arti/
+| Layer | Component | Description |
+|---|---|---|
+| **Orchestration** | LangGraph | State machine managing cyclical execution and self-healing loops |
+| **LLM Engine** | Google Gemini API | Structured reasoning, code generation, and executive reporting |
+| **Execution Runtime** | Python 3.11+ / Sandbox | Local execution environment with captured I/O streams |
+| **Data & Viz** | Pandas, NumPy, Seaborn, Matplotlib | Tabular data manipulation and statistical visualization |
+| **Interface** | Streamlit | Web interface for file ingestion, log streaming, and rendering |
+
+
+
+autonomous EDA agent/
 ├── core/
 │   ├── __init__.py         # Package initialization
 │   ├── state.py            # TypedDict state schema definition
