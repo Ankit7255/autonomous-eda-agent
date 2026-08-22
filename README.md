@@ -54,16 +54,6 @@ Dynamic Visualization Guardrails: Enforces cardinality checks during the plannin
 Executive Synthesis: Converts raw execution metrics and outputs into structured markdown reporting with domain-specific recommendations.
 
 
-## Technical Stack
-
-
-| Layer | Component | Description |
-|---|---|---|
-| **Orchestration** | LangGraph | State machine managing cyclical execution and self-healing loops |
-| **LLM Engine** | Google Gemini API | Structured reasoning, code generation, and executive reporting |
-| **Execution Runtime** | Python 3.11+ / Sandbox | Local execution environment with captured I/O streams |
-| **Data & Viz** | Pandas, NumPy, Seaborn, Matplotlib | Tabular data manipulation and statistical visualization |
-| **Interface** | Streamlit | Web interface for file ingestion, log streaming, and rendering |
 
 
 
@@ -80,3 +70,20 @@ autonomous EDA agent/
 ├── main.py                 # Standalone pipeline test harness
 ├── requirements.txt        # Python package dependencies
 └── .gitignore              # Environment variable and artifact exclusions
+
+
+
+```
+
+## Technical Stack
+
+
+| Layer | Component | Description |
+|---|---|---|
+| **Orchestration** | LangGraph | State machine managing cyclical execution and self-healing loops |
+| **LLM Engine** | Google Gemini API | Structured reasoning, code generation, and executive reporting |
+| **Execution Runtime** | Python 3.11+ / Sandbox | Local execution environment with captured I/O streams |
+| **Data & Viz** | Pandas, NumPy, Seaborn, Matplotlib | Tabular data manipulation and statistical visualization |
+| **Interface** | Streamlit | Web interface for file ingestion, log streaming, and rendering |
+
+
